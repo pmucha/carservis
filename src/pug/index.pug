@@ -1,0 +1,98 @@
+- var root = "../../"
+- var bsIcon = root + "node_modules/bootstrap-icons/icons/"
+
+doctype html
+html(lang="pl")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Carservis Jerzy Mucha - warsztat samochodowy w Zgorzelcu specjalizujący się w geometrii podwozia, profesjonalnym wyważaniu kół.")
+    meta(name="keywords" content="zbieżność, zgorzelec, ustawianie, koła, kąty, geometria, wyważanie, carservis, warsztat, mechanik, opony, części")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="stylesheet", href="../scss/index.scss")
+    title Zbieżność i wyważanie kół w Zgorzelcu - Carservis Jerzy Mucha
+
+  body
+    header
+      nav.navbar-top.navbar.shadow.fixed-top.ma-auto
+        .navbar-top__container.container
+          .col-sm-6.col-12
+            .logo
+
+          .col-sm-6.col-12.d-sm-flex
+            .telephone.col-sm-5.col-12.my-3.my-sm-1.d-flex.justify-content-center.justify-content-sm-end.align-items-center
+              img.d-inline.d-sm-none.d-lg-inline.me-2(src=bsIcon + "telephone.svg" alt="")
+              a(href="tel:+48531167518") <small>+48</small>&nbsp;531&nbsp;167&nbsp;518
+
+            .address.col-sm-7.col-12.d-flex.justify-content-center.justify-content-sm-end.align-items-center
+              img.d-inline.d-sm-none.d-lg-inline.me-2(src=bsIcon + "geo-alt.svg" alt="")
+              a(href="https://goo.gl/maps/n1EmWGyYZNwpWEQ39", style="text-align: center") Reymonta 29A, Zgorzelec
+
+    main.container-sm.px-0.px-sm-2
+      .row.g-0
+        .col-md-6.col-12
+          .geometria.photo
+            .main__info.d-flex.align-items-center.ps-3 Geometria podwozia
+
+          p.pt-3.ps-2.pe-3
+            |  Sztandarową usługą naszej fimy jest komputerowa diagnostyka
+            |  i&nbsp;regulacja geometrii kół (popularnie: zbieżność). Wykonujemy ją na nowoczesnym
+            |  sprzęcie marki
+            |  <strong><a href="https://www.hunter.com/alignment-machines/standard-alignment/" target="_blank" rel="nofollow">HUNTER</a> WA130</strong>,
+            |  wyposażonym w&nbsp;kamery cyfrowe <strong>HawkEye HS201</strong>.
+          p.ps-2.pe-3
+            strong
+              a(href="tel:+48531167518") Zadzwoń do nas i&nbsp;umów się na usługę!
+
+        .col-md-6.col-12
+          .wywazanie.photo
+            .main__info.d-flex.align-items-center.ps-3 Pomiar wibracji kół
+          p.pt-3.ps-2.pe-3
+            |  Nie zawsze ustawienie geometrii całkowicie usuwa problem ściągania auta z&nbsp;kierunku jazdy.
+            |  W&nbsp;takiej sytuacji wina najczęściej leży po stronie kół, a&nbsp;dokładniej opon. Dysponujemy innowacyjną
+            |  technologią do pomiaru między innymi tego zjawiska. Posiadamy
+            |  <strong>Komputerowy System Kontroli Wibracji GSP9722</strong> znanej amerykańskiej firmy
+            |  <a href="https://www.hunter.com/wheel-balancers/" target="_blank" rel="nofollow">HUNTER</a>.
+            |  Urządzenia te były dostępne do niedawna tylko w&nbsp;renomowanych fabrykach opon i&nbsp;dużych montowniach
+            |  kół do nowych pojazdów. Możliwości diagnostyczne tego systemu są imponujące, a&nbsp;efekty
+            |  w&nbsp;połączeniu z&nbsp;regulacją geometrii kół &ndash; rewelacyjne.
+          p.ps-2.pe-3
+            |  Nasi Klienci mogą poznać w&nbsp;praktyce możliwości tego typu regulacji i&nbsp;cieszyć się
+            |  z&nbsp;komfortu jazdy samochodem jak z&nbsp;fabryki.
+
+      .row.g-0
+        .company-info.col.text-center.text-black-50.mt-3
+          strong.d-block.me-3 &copy; Carservis&nbsp;Jerzy&nbsp;Mucha
+          .d-inline-block.me-3 59-900&nbsp;Zgorzelec
+          .d-inline-block.me-3 ul.&nbsp;Reymonta&nbsp;29A
+          .d-inline-block.me-3 NIP&nbsp;615-000-00-97
+          .d-inline-block.me-3 REGON&nbsp;003290949
+          a(href="mailto:info@carservis.net") info@carservis.net
+      .row.g-0
+        .col.text-center.text-black-50.mt-3
+          small.d-block.text-center.px-3
+            |  Ta strona nie zbiera Twoich danych osobowych,
+            |  nie używa cookies ani innych podobnych technologii.
+
+
+    footer
+      nav.navbar-bottom.navbar.fixed-bottom.pt-2.pb-1
+        .container.justify-content-around.text-white
+
+          .navbar-bottom__button.action.action-email.d-flex.justify-content-center.align-items-center.mx-3.ms-auto
+            a.button.d-flex.flex-column(href="mailto:info@carservis.net")
+              .button__icon.d-flex.justify-content-center
+                img(src=bsIcon + "envelope.svg" alt="")
+              .button__desc.d-flex.justify-content-center Kontakt
+
+          .navbar-bottom__button.action.action-map.d-flex.justify-content-center.align-items-center.mx-3
+            a.button.d-flex.flex-column(href="https://goo.gl/maps/sykbeYbcKcgqGXB99", target="_blank")
+              .button__icon.d-flex.justify-content-center
+                img(src=bsIcon + "geo-alt.svg" alt="")
+              .button__desc.d-flex.justify-content-center Mapa
+
+          .navbar-bottom__button.action.action-call.d-flex.justify-content-center.align-items-center.mx-3.me-auto
+            a.button.d-flex.flex-column(href="tel:+48531167518")
+              .button__icon.d-flex.justify-content-center
+                img(src=bsIcon + "telephone.svg" alt="")
+              .button__desc Zadzwoń

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "bootstrap-icons": "^1.2.1"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.30.0"
+  },
+  "scripts": {
+    "clear:serve": "del-cli serve",
+    "clear:build": "del-cli build",
+    "clear": "npm run clear:serve && npm run clear:build",
+    "dev": "npm run serve",
+    "serve": "npm run clear:serve && parcel serve src/pug/index.pug --no-source-maps --out-dir serve",
+    "build": "npm run clear:build && parcel build src/pug/index.pug --no-source-maps --experimental-scope-hoisting --out-dir build --public-url ./"
+  }
+}
